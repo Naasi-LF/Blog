@@ -1,0 +1,170 @@
+# If your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would
+# contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
+baseURL: "http://localhost:1313/naasiBlog/"
+title: "Naasi Blog"
+copyright: "[PaperMod Contributors](https://github.com/adityatelange/hugo-PaperMod/graphs/contributors)"
+theme: [hugo-PaperMod]
+
+defaultContentLanguage: "en"
+defaultContentLanguageInSubdir: true
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+enableEmoji: true
+pygmentsUseClasses: true
+mainsections: ["posts", "papermod"]
+
+minify:
+  disableXML: true
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    title: "Naasi Blog"
+    contentDir: content/en
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+        - name: Archive
+          url: archives/
+          weight: 5
+        - name: Search
+          url: search/
+          weight: 10
+        - name: Categories
+          url: categories/
+          weight: 15
+        - name: Tags
+          url: tags/
+          weight: 20
+        - name: Github
+          url: https://github.com/Naasi-LF
+          weight: 25
+    params:
+      homeInfoParams:
+        Title: "Hi, I'm Naasi 👋"
+        Content: >
+          A **Software Engineer** with expertise in **Algorithm Development** (NLP, Machine Learning) and **Database Engineering** 🗄️ (Raft, KV Storage). Proficient in **full-stack development** with React, Vue, and Flutter for frontend 🎨, while utilizing Gin, SpringBoot, Express, and Flask for backend solutions ⚡. Skilled in development tools including LaTeX, Typst, Vim, Docker, and Git 🛠️.
+
+  zh:
+    languageName: "简体中文"
+    weight: 2
+    title: "Naasi 博客"
+    contentDir: content/zh
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+        - name: 归档
+          url: archives/
+          weight: 5
+        - name: 搜索
+          url: search/
+          weight: 10
+        - name: 分类
+          url: categories/
+          weight: 15
+        - name: 标签
+          url: tags/
+          weight: 20
+    params:
+      homeInfoParams:
+        Title: "你好，我是 Naasi 👋"
+        Content: >
+          一名 **软件工程师**，专注于 **算法开发**（NLP、机器学习）和 **数据库工程** 🗄️（Raft、KV 存储）。擅长 **全栈开发**，前端使用 React、Vue 和 Flutter 🎨，后端运用 Gin、SpringBoot、Express 和 Flask ⚡。熟练使用 LaTeX、Typst、Vim、Docker 和 Git 等开发工具 🛠️。
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  env: production
+  description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
+  author: Naasi
+  #  # Social media links (using new params format)
+  social:
+    - name: github
+      url: "https://github.com/Naasi-LF"
+    - name: twitter
+      url: "https://twitter.com/your-handle"  # 替换为你的Twitter
+    - name: linkedin
+      url: "https://linkedin.com/in/your-profile"  # 替换为你的LinkedIn
+    - name: email
+      url: "mailto:naasi2737@gmail.com"  # 替换为你的邮箱
+  socialIcons:
+    - name: github
+      url: "https://github.com/Naasi-LF"
+    - name: email
+      url: "mailto:naasi2737@gmail.com"  # 替换为你的邮箱
+    - name: twitter
+      url: "https://twitter.com/your-handle"  # 替换为你的Twitter
+    - name: linkedin
+      url: "https://linkedin.com/in/your-profile"  # 替换为你的LinkedIn
+    - name: rss
+      url: "index.xml"
+  defaultTheme: auto
+  # disableThemeToggle: true
+  ShowShareButtons: true
+  ShowReadingTime: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  ShowAllPagesInArchive: true
+  ShowPageNums: true
+  ShowToc: true
+  taxonomyCloud:
+    - categories
+    - tags
+  taxonomyCloudTitle:
+    - Categories
+    - Tags
+  taxonomyPageHeader:
+    - Categories
+    - Tags
+  # comments: false
+  images: ["images/papermod-cover.png"]
+
+  profileMode:
+    enabled: true
+    title: "Naasi"
+    subtitle: "Software Engineer"
+    imageUrl: "/naasiBlog/images/avatar.png"
+    imageTitle: "My Avatar"
+    imageWidth: 120
+    imageHeight: 120
+    buttons:
+      - name: Posts
+        url: posts
+      - name: Tags
+        url: tags
+      - name: Categories
+        url: categories
+
+  zh:
+    profileMode:
+      enabled: true
+      title: "Naasi"
+      subtitle: "软件工程师"
+      imageUrl: "/naasiBlog/images/avatar.png"
+      imageTitle: "我的头像"
+      imageWidth: 120
+      imageHeight: 120
+      buttons:
+        - name: 文章
+          url: posts
+        - name: 标签
+          url: tags
+        - name: 分类
+          url: categories
