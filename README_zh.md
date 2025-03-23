@@ -95,3 +95,5 @@ hugo server -D
 2. 图片请放在 `static/images` 目录下
 3. 可以使用 `<!--more-->` 来控制文章预览的截断位置
 4. 中英文文章分别放在 `content/zh/posts` 和 `content/en/posts` 目录下
+
+hugo --baseURL="http://www.naasi.online"

@@ -139,8 +139,8 @@ params:
   profileMode:
     enabled: true
     title: "Naasi"
-    subtitle: "Software Engineer"
-    imageUrl: "/naasiBlog/images/avatar.png"
+    subtitle: "Software Engineer、Algorithm Developer"
+    imageUrl: "https://naasi.oss-cn-shanghai.aliyuncs.com/image-20250318023306320.png"
     imageTitle: "My Avatar"
     imageWidth: 120
     imageHeight: 120
@@ -157,7 +157,7 @@ params:
       enabled: true
       title: "Naasi"
       subtitle: "软件工程师"
-      imageUrl: "/naasiBlog/images/avatar.png"
+      imageUrl: "https://naasi.oss-cn-shanghai.aliyuncs.com/image-20250318023306320.png"
       imageTitle: "我的头像"
       imageWidth: 120
       imageHeight: 120
